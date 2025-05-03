@@ -12,7 +12,6 @@ import {
   Edit,
   Trash2,
   LayoutDashboard,
-  FileCertificate,
   FileCheck,
   UserCheck,
   CreditCard,
@@ -42,6 +41,7 @@ import {
   Lock,
   FileQuestion,
   BellRing,
+  File,
 } from "lucide-react";
 
 export const Icons = {
@@ -57,7 +57,7 @@ export const Icons = {
   edit: Edit,
   delete: Trash2,
   dashboard: LayoutDashboard,
-  certificate: FileCertificate,
+  certificate: File,
   verify: FileCheck,
   candidate: UserCheck,
   payment: CreditCard,
@@ -66,6 +66,7 @@ export const Icons = {
   error: XCircle,
   search: Search,
   document: FileText,
+  fileText: FileText, // Added this to fix references in other files
   barChart: BarChart,
   pieChart: PieChart,
   calendar: Calendar,
@@ -95,21 +96,5 @@ export const Icons = {
       <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
       <path d="M1 1h22v22H1z" fill="none" />
     </svg>
-  ),
-  spinner: ({ ...props }: React.SVGProps<SVGSVGElement>) => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M21 12a9 9 0 1 1-6.219-8.56" />
-    </svg>
-  ),
+  )
 };
