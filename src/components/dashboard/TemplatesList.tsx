@@ -62,7 +62,7 @@ export function TemplatesList() {
         {mockTemplates.map((template) => (
           <Card key={template.id} className="overflow-hidden">
             <div className="aspect-video bg-muted flex items-center justify-center border-b">
-              <Icons.fileText className="h-12 w-12 text-muted-foreground/40" />
+              <Icons.document className="h-12 w-12 text-muted-foreground/40" />
             </div>
             <CardHeader className="p-4">
               <CardTitle className="text-lg">{template.name}</CardTitle>

@@ -66,7 +66,7 @@ export function StatCards() {
         title="Templates" 
         value="5"
         description="Active templates" 
-        icon={Icons.fileText}
+        icon={Icons.document}
       />
       <StatCard 
         title="Certificate Verifications" 
